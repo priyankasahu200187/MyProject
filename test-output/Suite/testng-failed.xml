@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="regression_zuddo.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- regression_zuddo.HomePageTest -->
+      <class name="regression_zuddo.GroupPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="Test_UI009_JoinGroup"/>
+          <include name="TestUI009_LeaveGroup"/>
+          <include name="Test_UI005_001"/>
+        </methods>
+      </class> <!-- regression_zuddo.GroupPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
