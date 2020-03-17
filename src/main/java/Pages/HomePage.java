@@ -10,10 +10,11 @@ import regression_zuddo.TestBase;
 public class HomePage extends TestBase {
 
 
-	@FindBy(className="dropdown")
+
+	@FindBy(css="app-profile-picture")
 	WebElement ProfileImage;
 
-	@FindBy(xpath="//button[text()=\"Profile \"]")
+	@FindBy(css="[ng-reflect-router-link=\"/dashboard/profile/detail/ravi\"]")
 
 	WebElement Profile;
 

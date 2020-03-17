@@ -9,15 +9,29 @@ import regression_zuddo.TestBase;
 
 public class ProfilePage extends TestBase{
 
-
-	@FindBy(className="ng-fa-icon")
+	@FindBy(css="[icon=\"edit\"]")
 	WebElement EditProfile;
+	
+	@FindBy(css="[type=\"submit\"]")
+	WebElement Save;
+	
+	@FindBy(id="display_name")
+	WebElement Displayname;
+	
+
+	@FindBy(id="aboutTextArea")
+	WebElement AboutYourself;
+	
+	@FindBy(xpath="//div[@class=\"app-text--h1 profile-header__name\"]")
+	WebElement NameOnHeader;
+	
+	@FindBy(xpath="//app-description[@class=\"d-block\"]/span")
+	WebElement About;
 
 	@FindBy(className="modal__reject-btn app-btn--grey ng-star-inserted")
 	WebElement CancelButton;
 	
-	@FindBy(xpath="//button[@type=\"submit\"]")
-	WebElement Save;
+	
 	
 	@FindBy(xpath="//label[@for=\"display_name\"]/following-sibling::input")
 	WebElement Displaytext;
@@ -36,19 +50,6 @@ public class ProfilePage extends TestBase{
 	WebElement Cropimage;
 	
 	
-	@FindBy(id="display_name")
-	WebElement Displayname;
-	
-
-	@FindBy(id="aboutTextArea")
-	WebElement AboutYourself;
-	
-	@FindBy(xpath="//div[@class=\"app-text--h1 profile-header__name\"]")
-	WebElement NameOnHeader;
-	
-	@FindBy(xpath="//app-description[@class=\"d-block\"]/span")
-	WebElement About;
-
 	public ProfilePage() throws Exception {
 		super();
 		commonUtil.waitForPageToLoad(driver);
@@ -102,9 +103,8 @@ public class ProfilePage extends TestBase{
 
 	public void editprofileclick() {
 
-		commonUtil.clickOnButton(driver, EditProfile,"EditProfile");
+	commonUtil.s
 	}
-
 
 
 	public void photoUpload() throws Exception {

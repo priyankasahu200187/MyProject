@@ -12,7 +12,7 @@ public class MainPage extends TestBase {
 
 
 
-	@FindBy(className="header__login")
+	@FindBy(css="a.header__login")
 
 	WebElement LOGINLINK;
 
@@ -27,7 +27,7 @@ public class MainPage extends TestBase {
 
 	WebElement PASSOWRD;
 
-	@FindBy(xpath="//*[@type=\"submit\"]")
+	@FindBy(css="button[type=\"submit\"]")
 
 
 	WebElement SUBMIT;
